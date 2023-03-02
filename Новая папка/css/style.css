@@ -3,12 +3,49 @@
     padding: 0;
     box-sizing: border-box;
 }
+/* полдключение шрифта */
+@font-face {
+    font-family:"Roboto Condensed" ;
+    src: url(../fons/RobotoCondensed-Regular.ttf);
+    font-weight: normal;
+    font-style: normal;
+}
+@font-face {
+    font-family:Roboto Condensed ;
+    src: url(../fons/RobotoCondensed-Bold.ttf);
+    font-weight: bold;
+    font-style: normal;
+}
+@font-face {
+    font-family:"PTSans";
+    src: url(../fons/PTSans-Regular.ttf);
+    font-weight: normal;
+    font-style: normal;
+}
+/* основные правила */
+:root {
+    --index: calc(1vw +1vh);
+    --main-color:#9C843B;
+    --grey-color: rgb(228, 220, 220);
+}
 ul,ol{
     list-style: none;
 }
 a{
     text-decoration: none;
-    color: #09606B;
+    color: var(--main-color);
+}
+h3{
+    margin-bottom: calc(var(--index)*1);
+}
+h2{
+    font-family: 'Roboto Condensed';
+font-style: normal;
+font-weight: 400;
+font-size: 28px;
+line-height: 33px;
+
+color: #000000;
 }
 body{
   font-family: "Roboto Condensed" , Arial, Helvetica, sans-serif;
@@ -94,7 +131,7 @@ margin-top: 10px ;
 width: 334px;
 height: 46px;
 line-height: 46px;
-background: #09606B;
+background: var(--main-color);
 font-family: 'Roboto Condensed';
 font-style: normal;
 font-weight: 400;
@@ -104,10 +141,81 @@ color: #EDEDED;
 text-align: center; 
 margin-top: 20px ;
 }
+.icon-svg{
+    width: 47px;
+    height: 51px;
+    align-self: flex-end;
+}
+.icon-svg path{
+    fill: var(--main-color);
+   
+}
+/* сделали ориентацию фото */
+.services-list{
+    display: flex;
+    flex-flow: row wrap;
+    justify-content: space-between;
+}
+.service{
+    flex: 1 1 28%;
+    max-width: 360px;
+    min-width: 300px;
+    height: calc(var(--index)*15);
+    /* гибкая высота */
+    /* border: 1px solid red; */
+    min-height: 230px;
+    /* фиксируем минимальную высоту */
+    position: relative;
+    background-color: rgba(245, 243, 243, 0.60);
+    padding: 10px;
+    overflow: hidden;
+    text-transform: 1s;
+    margin-bottom: calc(var(--index));
 
+}
+.service:hover .service-title{
+    opacity: 0;
+    transition: 1s;
+}
+.service:hover .service-img{
+    transform: scale(1.2);
+}
+.service-img{
+    position: absolute;
+    top: 0;
+    left: 0;
+    z-index: -1;
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+}
+.service-title{
+    /* border: 1px solid red; */
+    width: 100%;
+    height: 100%;
+    display: flex;
+    flex-flow: column nowrap;
+    justify-content: space-between;
+}
+.service{
+    margin-top: calc(var(--index)*2);
+}
+.service h3{
+    color: var(--main-color);
+}
+.service:hover{
+    background-color: rgba(0, 0, 0, 0);
+    transition: 1s;
+    
+    /* object-fit: cover;
+    /* top: 0;
+    left: 0; */
+    /* z-index: 1;
+    width: 100%;
+    height: 100%;
+} */ 
 
-
-
+}
 
 
 
