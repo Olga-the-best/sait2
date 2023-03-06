@@ -93,7 +93,7 @@ body{
 /* promo */
 
 .promo{
-    background: #ddd url(../img/bg.png) no-repeat 0 50%;
+    background: #ddd url(../img/bg1.png.png) no-repeat 0 50%;
     background-size: cover;
     background-attachment: fixed;
     
@@ -144,17 +144,90 @@ margin-top: 20px ;
 .icon-svg{
     width: 47px;
     height: 51px;
-    align-self: flex-end;
+    align-self: flex-end; 
 }
+.icon-svg1{
+    width: 78px;
+    height: 80px;
+    align-self: flex-end;
+    margin-bottom: -40px ;
+}
+
+
+
 .icon-svg path{
     fill: var(--main-color);
    
 }
+.about-text{
+    display: flex;
+    border: 1px solid red;
+    /* margin-left: -20px; */
+}
+.about-inner1{
+    margin-top: calc(var(--index)*4);
+    /* padding: 100px; */
+    
+    /* flex: 40%; */
+    display: flex;
+    justify-content: stretch;   
+    
+    /* max-height: 500px; */
+    /* flex-wrap:wrap;  */
+    
+    /* flex: 1 1 40%;
+    max-width: 360px;
+    min-width: 300px;
+} */
+}
+.about{
+    margin-top: calc(var(--index)*4);
+}
+.pic{
+    display: flex; 
+    /* max-width: 20%; */
+  /* max-width: 300px;
+  min-width: 200px; */
+  /* height: 400px; */
+  /* width: 100px; */
+  /* border: 1px solid red; */
+  /* object-fit: cover; */
+   max-width: 700px; 
+   
+}
+  
+.inner-text{
+   max-width: 100%;  
+   max-width: 350px;
+   min-width: 350px;
+    display: flex;
+    /* border: 1px solid red; */
+    text-align: center;
+    padding: 50px;
+    
+    /* margin: calc(var(--index)*5); */
+
+}
+.inner-img{
+    display: flex;
+    /* max-width: 100%; */
+    max-width: 700px;
+    /* min-width: 350px; */
+    max-height: 100%;
+    min-width: 300px;
+    padding: 5px;
+} 
+.container1{
+    /* display: flex; */
+    /* margin: 0; */
+  max-height: 1700px;
+}
+
 /* сделали ориентацию фото */
 .services-list{
     display: flex;
     flex-flow: row wrap;
-    justify-content: space-between;
+    justify-content: center;
 }
 .service{
     flex: 1 1 28%;
@@ -167,9 +240,9 @@ margin-top: 20px ;
     /* фиксируем минимальную высоту */
     position: relative;
     background-color: rgba(245, 243, 243, 0.60);
-    padding: 10px;
+    padding: 15px;
     overflow: hidden;
-    text-transform: 1s;
+    text-transform: 2s;
     margin-bottom: calc(var(--index));
 
 }
@@ -178,7 +251,7 @@ margin-top: 20px ;
     transition: 1s;
 }
 .service:hover .service-img{
-    transform: scale(1.2);
+    transform: scale(1.4);
 }
 .service-img{
     position: absolute;
@@ -196,16 +269,17 @@ margin-top: 20px ;
     display: flex;
     flex-flow: column nowrap;
     justify-content: space-between;
+    
 }
 .service{
-    margin-top: calc(var(--index)*2);
+    margin-top: calc(var(--index)*4);
 }
 .service h3{
     color: var(--main-color);
 }
 .service:hover{
     background-color: rgba(0, 0, 0, 0);
-    transition: 1s;
+    transition: 2s;
     
     /* object-fit: cover;
     /* top: 0;
@@ -214,6 +288,8 @@ margin-top: 20px ;
     width: 100%;
     height: 100%;
 } */ 
+
+
 
 }
 
