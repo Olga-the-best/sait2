@@ -1,0 +1,15 @@
+.nav_main{
+    position: fixed;
+    top: 0;
+    bottom: 0;
+    background: #8378b6;
+    width: 100%;
+}
+.padding_top{
+    padding-top: 80px;
+
+}
+.nav .nav-link{
+    color: white !important;
+    
+}
