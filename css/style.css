@@ -185,12 +185,13 @@ margin-top: 20px ;
 }
 .about-inner1{
     margin-top: calc(var(--index)*4);
-    width: 1320px;
+    flex: 1 1 40%;
+    /* width: 1320px; */
     /* padding: 100px; */
     
     /* flex: 40%; */
     display: flex;
-    justify-content: center;   
+    justify-content: stretch;   
     
     /* max-height: 500px; */
     /* flex-wrap:wrap;  */
@@ -217,7 +218,9 @@ margin-top: 20px ;
    
 }
 .pic1{
-    max-width: 600px;
+   width: 100%;
+   height: 100%;
+   object-fit: cover;
 }
 .dizain{
     padding-top: 50px;
@@ -225,7 +228,7 @@ margin-top: 20px ;
   
 .inner-text{
    max-width: 100%;  
-   max-width: 350px;
+   max-width: 700px;
    min-width: 350px;
     display: flex;
     /* border: 1px solid red; */
@@ -235,13 +238,13 @@ margin-top: 20px ;
     /* margin: calc(var(--index)*5); */
 
 }
-.
+
 .inner-img{
     display: flex;
     /* max-width: 100%; */
-    max-width: 700px;
+    max-width: 1900px;
     /* min-width: 350px; */
-    max-height: 100%;
+    height: 40vh;
     min-width: 300px;
     padding: 5px;
     flex: 1 1 auto;
@@ -270,7 +273,7 @@ margin-top: 20px ;
 .services-list{
     display: flex;
     flex-flow: row wrap;
-    justify-content: center;
+    justify-content: space-between;
 }
 .service{
     flex: 1 1 28%;
@@ -283,13 +286,21 @@ margin-top: 20px ;
     /* фиксируем минимальную высоту */
     position: relative;
     background-color: rgba(245, 243, 243, 0.60);
-    padding: 15px;
+    padding: 10px;
+    margin: 10px;
     overflow: hidden;
     text-transform: 2s;
     /* margin-bottom: calc(var(--index)*2); */
     /* margin: calc(var(--index))*2; */
-    margin-left: calc(var(--index)*2);
+    /* margin-left: calc(var(--index)*2); */
 
+}
+.servis1-list{
+    display: flex;
+    flex: 1 1 28%;
+    max-width: 360px;
+    min-width: 300px;
+    height: calc(var(--index)*15);
 }
 .service:hover .service-title{
     opacity: 0;
@@ -305,7 +316,8 @@ margin-top: 20px ;
     z-index: -1;
     width: 100%;
     height: 100%;
-    object-fit: cover;
+    -o-object-fit: cover;
+       object-fit: cover;
 }
 .service-title{
     /* border: 1px solid red; */
@@ -330,6 +342,7 @@ margin-top: 20px ;
     display: flex;
     justify-content: center;
     padding: 20px;
+    /* position: relative; */
 }
 .preimu{
     display: flex;
@@ -341,7 +354,7 @@ margin-top: 20px ;
 .service2{
     display: flex;
     justify-content: space-between;
-    border: 1px solid red;
+    /* border: 1px solid red; */
     flex: 1 1 28%;
     max-width: 360px;
     min-width: 300px;
@@ -385,53 +398,188 @@ p{
     width: 400px;
     display: flex;
     flex-flow: column;
-    border: 1px solid red;
+    /* border: 1px solid red; */
 
 
 }
 
-/* .container2{
-display:flex;
-max-height: 1700px;
-width: 1320px;
-flex-wrap: wrap;
-justify-content: ;
-} */
-
- 
-
-/* .pic2{
-    
-    width: 600px;
-    border: 1px solid red;
-} */
-/* .inner3-img{
-    border: 10px green;
-}
- */
  .about3{
     display: flex;
     flex-wrap: wrap;
-    justify-content: space-between;
+    justify-content: stretch;
  }
  .inner3-img{
     display: flex;
+    /* border: 1px solid red; */
  }
  
   .pic5{
     display: flex;
-    width: 700px;
+    width: 1100px;
     max-height: 400px;
     padding-left: 100px;
     margin-top: 30px;
  }
  .promo1{
-   max-width: ; width: 1200px;
-    margin: 50px;
-    background: #ddd url(../img/bg1.png.png) no-repeat 0 50%;
+   /* max-width: width:; */
+    margin:50px;
+    background:#ddd url(../img/bg1.png.png) no-repeat 0 50%;
     background-size: cover;
-    background-attachment: fixed;
-    background: url(../img/Rectangle\ 49\ 1\ \(1\).png) no-repeat 0 50%;
+    background-attachment:fixed;
+    /* background:url(../img/Rectangle\ 49\ 1\ \(1\).png) no-repeat 0 50%; */
 }
-  
+.promo2{
+    margin: 100px;
+   /* max-width: */
+   
+    /* background:#ddd url(../img/bg1.png.png) no-repeat 0 50%; */
+    background-size: cover;
+    background-attachment:fixed;
+    /* background:url(../img/Rectangle\ 49\ 1\ \(1\).png) no-repeat 0 50%;  */
+}
+.obrat{
+    background:url(../img/Rectangle\ 49\ 1\ \(1\).png) no-repeat 0 50%;
 
+}
+
+.card{
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+
+    /* flex: 1 1 40%; */
+}
+.preim{
+    display: flex;
+    /* border: 1px solid red; */
+    flex: 1 1 28%;
+    max-width: 360px;
+    min-width: 300px;
+    height: calc(var(--index)*15);
+    /* гибкая высота */
+    /* border: 1px solid red; */
+    min-height: 230px;
+    /* фиксируем минимальную высоту */
+    position: relative;
+    flex-flow: column nowrap;
+    padding: 15px;
+    margin: 20px;
+
+}
+      
+
+.obrat{
+    display: flex;
+    justify-content: stretch;
+    flex: 1 1 20%;
+    flex-wrap: wrap;
+    
+
+}
+.con{
+    /* border: 1px solid red; */
+    max-width: 400px;
+    display: flex;
+    flex-flow: column;
+    justify-content: space-around;
+
+    
+}
+.text1, .text3{
+    font-size: 16px;
+}
+.text2{
+    font-size: 26px;
+}
+.text4{
+    font-size: 40px;
+}
+.con2{
+    /* border: 1px solid red; */
+    max-width: 700px;
+    background: white;
+    display: flex;
+    padding-top: 2vmax;
+    max-height: 300px;
+    /* height: 80%; */
+    /* height: 100px; */
+    margin: 7vh;
+}
+.con3{
+    /* border: 1px solid red; */
+}
+.block-form{
+    display: flex;
+    height: 60%;
+    flex-flow: column;
+}
+.form-control{
+    text-align: center;
+}
+label{
+    font-size: 14px;
+    margin: 20px;
+  }
+
+
+input,textarea{
+    outline: 0;
+     /* внутренне поле  */
+    vertical-align: middle;
+     /* вертикальное выравнивание внутри  */
+    vertical-align: top;
+     /* чтобы внутри строки текст был по центру   */
+}
+.form-control{
+    /*color: grey;*/
+    font-size: 16px;
+    margin-bottom: 1rem;
+}
+.form-control input, .form-control textarea{
+    border: 1px;
+    background: #fff;
+    color: BLACK;
+    font-size: 16px;
+    padding:12px 10px;
+    font-family: Arial, Helvetica;
+}
+.form-control input[type="submit"]{
+    background: #9C843B;
+    color: white;
+    font-size: 14px;
+    text-transform: uppercase;
+    pad: 25px 20px;
+}
+.feedback{
+    width: 70%;
+    display: block;
+    margin: 0 auto;
+}
+#feedback{
+  
+    
+    position: relative;
+}
+
+.group-row_start{
+    justify-content: flex-start;
+    text-align: left;
+}
+input[type="text"]{
+    flex: 0 1 auto;
+    width: 80%;
+}
+input[type="email"]{
+    flex: 0 1 auto;
+    width: 80%;
+}
+
+input:invalid{
+    border: 1px solid grey;
+}
+input:valid{
+    border: 1px solid #9C843B;
+}
+.block-form h3{
+    font-size: 16px;
+}
